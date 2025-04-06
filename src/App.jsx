@@ -18,23 +18,22 @@ import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home"
 import About from "./pages/About"
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Navbar from "./components/Navbar";
+import Navbar from "/components/Navbar";
 
 export default function App() {
 
   return (
     
-   <BrowserRouter>
-   <header>
-    <Link className="site-logo" to="/">#VanLife</Link>
-   </header>
-    <Navbar />
-   <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-   </Routes>
-   </BrowserRouter>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
   );
 }
+
+  
 
 

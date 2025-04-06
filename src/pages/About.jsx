@@ -1,13 +1,13 @@
 import React from 'react'
-import bgImg from "../assets/images/about-hero.png"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 export default function About() {
 
     return (
       <div className = "about-page-container">
 
-      <img src{bgImg} className="about-hero-image"/>
+      <img src="about-hero.jpg" className="about-hero-image"/>
       <div className="about-page-content">
 
       <h1>Don't squeeze in a sedan when you could relax in a van.</h1>
@@ -17,7 +17,7 @@ export default function About() {
       </p>
       </div>
       <div className="about-page-cta">
-        <Link className="link-button" to= "/vans">Explore our vans</Link>
+        <Link className="link-button" to= "/about">Explore our vans</Link>
       <h2>Your destination is waiting.<br/> Your van is ready.</h2>
       </div>
       </div>
